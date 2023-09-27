@@ -1,0 +1,11 @@
+Model Information:
+* title:	Girl in a hoodie
+* source:	https://sketchfab.com/3d-models/girl-in-a-hoodie-93be2b6af79e4cc68a06ff60186d1990
+* author:	striderrotk (https://sketchfab.com/striderrotk)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Girl in a hoodie" (https://sketchfab.com/3d-models/girl-in-a-hoodie-93be2b6af79e4cc68a06ff60186d1990) by striderrotk (https://sketchfab.com/striderrotk) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

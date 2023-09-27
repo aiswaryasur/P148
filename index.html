@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+    <a-camera position="0 8 30"></a-camera>
+
+    <!-------------------------------------------Asset Management------------------------------------------->
+    <a-assets timeout="10000">
+
+      <a-asset-item id="girl" src="./models/girl_in_a_hoodie/scene.gltf"></a-asset-item>  
+      <a-asset-item id="photographer" src="./models/photographer/scene.gltf"></a-asset-item>   
+      <a-asset-item id="bg2" src="./models/camping_buscraft_ambience/scene.gltf"></a-asset-item>
+      <img id="bg" src="./images/sky.jpg">
+    </a-assets>
+    <a-sky src="#bg"></a-sky>
+
+    <!-------------------------------------Lights in the scene----------------------------------------------->
+
+    <!--Ambient-->
+    <a-entity light="type:ambient; intensity:1"></a-entity>
+    <!--Add Code here-->
+    <!-- Lights in Scene -->
+    <a-entity animation="property:rotation; to:360 360 0; easing:linear; loop:true; dur:10000; delay:1000">
+<a-entity
+light="type: point; castShadow: true; color: #FF8400; intensity: 3" position="5 20 1"></a-entity>
+</a-entity>
+
+    <!-------------------------------------Circular Plane----------------------------------------------->
+
+    <a-circle position="-0.4 -0.76 -25" rotation="-90 0 0" radius="100" shadow="receive: true" visible="true"
+      color="#100C07">
+    </a-circle>
+
+    <!--------------------------------------GLTF Models----------------------------------------------------------->
+    <a-entity>
+      <a-entity gltf-model="#bg2" scale="2 7 2" rotation="0 -70 0"></a-entity>
+      </a-entity>
+    <!--Girl-->
+    <a-entity>
+      <a-entity position="-5 0 20" rotation="0 0 0" scale="0.5 0.5 0.25" gltf-model="#girl"  shadow="cast: true; receive: false">
+      </a-entity>
+    </a-entity>
+
+    <!--Photographer-->
+    <a-entity>
+      <a-entity position="5 0 20" rotation="0 -90 0" scale="1 1 1" gltf-model="#photographer"  shadow="cast: true; receive: false">
+      </a-entity>
+    </a-entity>
+
+
+    <!--Add Code here-->
+
+    <!--------------------------------------END----------------------------------------------------------->
+  </a-scene>
+</body>
+
+</html>
